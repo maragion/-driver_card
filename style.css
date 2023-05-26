@@ -1,149 +1,146 @@
 @font-face {
-    font-family: "Inter";
-    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
 }
 
-
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
-    background-color: #1e1e1e;
-    font-family: "Inter", sans-serif;
+  background-color: #1e1e1e;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.card {
-    width: 795px;
-    height: 698px;
-    background-color: #FFFFFF;
-    border-radius: 40px;
-    border: 1px solid;
-    border-color: aqua;
-    padding: 24px 56px;
-    
+.driver-card {
+  width: 49.688rem;
+  height: 43.625rem;
+  background-color: #ffffff;
+  border-radius: 2.5rem;
+  padding: 1.5rem 3.5rem;
 }
 
-.decor {
-    width: 168px;
-    height: 17px;
-    background-color: #e5d8ea;
-    border-radius: 8px;
-    margin-bottom: 99px;
-    margin-left: 257px;
+.driver-card__decor-bar {
+  width: 10.5rem;
+  height: 1.063rem;
+  background-color: #e5d8ea;
+  border-radius: 0.5rem;
+  margin-left: 16.063rem;
 }
 
-.portrait_caption {
-    width: 100px;
-    height: 31.5px;
-    background-color: #372d3b;
-    border-radius: 15.69px;
-    padding: 5px 20px;
+.driver-card__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: inline-block;
 }
 
-.portrait_caption_text {
-    font-size: 19.61px;
-    font-weight: bold;
-    color: #fbf8fc;
-    margin-left: 5px;
+.driver-card__title > span {
+  color: #864293;
 }
 
-.title {
-    font-size: 40px;
-    font-weight: bold;
-
+.driver-card__sub-title {
+  font-size: 1.563rem;
+  font-weight: 500;
 }
 
-.sub_title {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 99px;
+.driver-card__helper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 99px;
+.driver-card__images-section {
+  position: relative;
+  width: 23.625rem;
 }
 
-.images {    
-    position: relative;
-    width: 378px;
+.driver-card__portrait {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-.image1 {
-    position: relative;
-    top: 0;
-    left: 0px;
-  }
-  
-  .image2 {    
-    position: absolute;
-    top: 30px;
-    left: 92px;
-  }
-
-  .image3 {
-    position: absolute;
-    top: 110px; 
-    left: 19px;
-  }
-
-  .name {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 7px;
-    margin-left: 34px;
-  }
-
-
-  .right {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    height: 170.34px;
-    width: 304px;
+.driver-card__car-logo {
+  position: absolute;
+  top: 1.875rem;
+  left: 5.75rem;
 }
 
-.car-number {
-    font-size: 41.1px;
-    font-weight: bold;
+.driver-card__portrait-caption {
+  width: 6.25rem;
+  height: 1.969rem;
+  background-color: #372d3b;
+  border-radius: 0.981rem;
+  padding: 0.313rem 1.25rem;
+  position: absolute;
+  top: 6.875rem;
+  left: 1.188rem;
 }
 
-.car-model {
-    font-size: 24.66px;
-    font-weight: 500;
+.driver-card__portrait-caption-text {
+  font-size: 1.226rem;
+  font-weight: bold;
+  color: #fbf8fc;
+  margin-left: 0.313rem;
 }
 
-input[type=text] {
-    width: 516.92px;
-    height: 64px;
-    background-color: #f5edf7;
-    padding: 17px 29px;
-    border-radius: 24px;
-    font-size: 24px;
-    font-weight: 500;
+.driver-card__driver-name {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-top: 0.438rem;
+  margin-left: 2.125rem;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48px;
-    height: 64px;
-    border-radius: 10px;
-    margin-left: 32px;    
+.driver-card__car-info {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 10.646rem;
+  width: 18.938rem;
 }
 
-.container-wo-mb {
-    margin-bottom: 0;
+.driver-card__car-number {
+  font-size: 2.569rem;
+  font-weight: bold;
+  display: block;
+}
+
+.driver-card__car-model {
+  font-size: 1.541rem;
+  font-weight: 500;
+}
+
+.driver-card__input {
+  width: 32.307rem;
+  height: 4rem;
+  background-color: #f5edf7;
+  padding: 1.063rem 1.813rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.driver-card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 4rem;
+  border-radius: 0.625rem;
+  margin-left: 2rem;
+}
+
+.driver-card_space-between-sections {
+  margin-top: 6.188rem;
 }
